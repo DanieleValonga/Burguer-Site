@@ -1,0 +1,105 @@
+:root {
+    --menu-size: 250px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+
+#menu {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+#menu a {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.meu_menu {
+    display: none !important;
+
+}
+
+.open .meu_menu {
+    display: block !important;
+    transition: ease-out;
+}
+
+#menu i, #menu span {
+    display: flex;
+    text-align: center;
+    padding: 18px;
+    padding-top: 100px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(44, 32, 32), rgb(176, 176, 87));
+    color: black;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+h2 {
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+
+h3 {
+    display: block;
+    align-items: flex-end;
+}
+
+#cardapio {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 70px;
+    flex-wrap: wrap;
+}
+
+img:hover {
+    transform: scale(0.9);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out
+}
+
+body {
+    background-color: rgb(176, 176, 87);
+}
+
+h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+}
