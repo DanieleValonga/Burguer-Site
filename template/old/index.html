@@ -2,6 +2,7 @@
 <html lang="pt">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta charset="UTF-8" <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport"
         content="width=device-width, initial-scale=1.0" <title>
     <title>Menu animado - SatellaSoft</title>
@@ -22,11 +23,12 @@
             <i class="material-symbols-outlined">restaurant_menu</i>
             <span class="meu_menu">cardapio</span>
         </a>
-        <a href="#">
+        <a href="carrinho">
             <i class="material-symbols-outlined">shopping_cart</i>
             <span class="meu_menu">carrinho</span>
+
         </a>
-        <a href="#">
+        <a href="itens">
             <i class="material-symbols-outlined">rice_bowl</i>
             <span class="meu_menu">itens</span>
         </a>
@@ -44,8 +46,8 @@
     <h2>Tradicionais</h2>
 
     <div id="cardapio">
-        <div>
-            <h3>X-BACON - Bacon, hambúrguer de carne e queijo</h3>
+        <!-- <div>
+            <h3>X-BACON - , hambúrguer de carne e queijo</h3>
             <img src="http://192.168.0.201:3001/public/images/x-bacon.png" alt"X-BACON">
             <a href="adicionais">Comprar</a>
             <h3>Á Partir de R$ 6,50</h3>
@@ -60,7 +62,7 @@
             <button id="321">Comprar</button>
         </div>
 
-        <div>
+        <div onclick="fireTost('X-EGG adicionado no carrinho')">
             <h3>X-EGG - Ovo, hamburguer de carne e queijo</h3>
             <img src="http://192.168.0.201:3001/public/images/x-egg.png" alt="X-EGG">
             <a href="adicionais">Comprar</a>
@@ -74,7 +76,7 @@
             <a href="adicionais">Comprar</a>
             <h3>Á Partir de R$ 7,30</h3>
             <button id="btnClique">Comprar</button>
-        </div>
+        </div> -->
     </div>
 
 </body>

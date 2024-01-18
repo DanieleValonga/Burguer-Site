@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <script src="public/js/carrinho.js"></script>
+    <link rel="stylesheet" href="public/css/carrinho.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+{% endblock %}
+
+{% block body %}
+
+<section>
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Lanche</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody id="container">
+        </tbody>
+    </table>
+
+</section>
+{% endblock %}

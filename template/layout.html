@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0"> </meta>
+    <title>Menu animado - SatellaSoft</title>
+    <link rel="stylesheet" href="public/css/style cardapio.css">
+    <link rel="preload" href="public/css/style cardapio.css" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const host = ''
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('menu_button').addEventListener('click', function () {
+                const navbar = document.getElementById('menu')
+
+                navbar.classList.toggle('open')
+            })
+
+        })
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        const fire_Toast = message => Toast.fire({
+            icon: "success",
+            title: message
+        });
+    </script>
+
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+
+    <nav id="menu">
+        <i class="material-symbols-outlined" id="menu_button">menu</i>
+        <a href="/">
+            <i class="material-symbols-outlined">restaurant_menu</i>
+            <span class="meu_menu">cardapio</span>
+        </a>
+        <a href="/carrinho">
+            <i class="material-symbols-outlined">shopping_cart</i>
+            <span class="meu_menu">carrinho</span>
+
+        </a>
+        <a href="/itens">
+            <i class="material-symbols-outlined">rice_bowl</i>
+            <span class="meu_menu">itens</span>
+        </a>
+    </nav>
+
+    <header>
+        <h1>Cabaré Lanches</h1>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
