@@ -20,11 +20,11 @@ def home():
 
 @app.route('/carrinho')
 def carrinho():
-    return render_template('jinja_carrinho.html')
+    return render_template('jinja_carrinho.html', title='Carrinho')
 
 @app.route('/itens')
 def itens():
-    return render_template('jinja_itens.html')
+    return render_template('jinja_itens.html', title='Monte seu Lanche!')
 
 #---APIs---
 

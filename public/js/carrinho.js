@@ -69,3 +69,7 @@ const removeItem = (lancheName) => {
 //         tabela.remove();
 //     }
 // });
+
+function minhaFuncao() {
+    alert("Olha! Você clicou em um botão que não faz bosta nenhuma. Ainda.")
+}
